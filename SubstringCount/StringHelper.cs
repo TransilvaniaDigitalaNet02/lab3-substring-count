@@ -18,7 +18,7 @@
             int counter = 0;
             while (indexStart < text.Length)
             {
-                int foundAt = text.IndexOf(lookupFragment, indexStart);
+                int foundAt = text.IndexOf(lookupFragment, indexStart, StringComparison.OrdinalIgnoreCase);
                 if (foundAt >= 0)
                 {
                     counter++;
