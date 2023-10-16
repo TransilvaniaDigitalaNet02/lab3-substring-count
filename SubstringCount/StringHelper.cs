@@ -22,7 +22,7 @@
                 if (foundAt >= 0)
                 {
                     counter++;
-                    indexStart = foundAt + lookupFragment.Length;
+                    indexStart = foundAt + 1;
                 }
                 else
                 {

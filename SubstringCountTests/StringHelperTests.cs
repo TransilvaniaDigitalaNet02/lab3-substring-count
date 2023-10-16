@@ -37,6 +37,7 @@ namespace SubstringCountTests
         [InlineData("ana are mere.merele sunt coapte", "mere", 2)]
         [InlineData("ana are mere", "ana", 1)]
         [InlineData("ene mere mure rere", "re", 4)]
+        [InlineData("aaaaa", "aa", 4)]
         public void CountOccurences_WhenCorrectDataProvided_ReturnsExpectedCount(string text, string lookupFragment, int expectedCount)
         {
             int count = StringHelper.CountOccurences(text, lookupFragment);
